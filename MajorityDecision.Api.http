@@ -1,0 +1,15 @@
+@HostAddress = http://localhost:5148
+
+GET {{HostAddress}}/api/fighters?q=Alv
+Accept: application/json
+
+###
+
+POST {{HostAddress}}/api/fighters
+Content-Type: application/json
+
+{
+  "firstName": "Saul",
+  "lastName": "Alvarez",
+  "suffix": null
+}
